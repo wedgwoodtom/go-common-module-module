@@ -3,11 +3,11 @@ default: build
 
 init: clean
 	@echo "installing dependencies"
-	go get ./...
+	go get -u ./...
 
 clean:
 	@echo "cleaning"
-	go clean
+	go clean -modcache
 
 build:
 	@echo "building"
@@ -15,10 +15,10 @@ build:
 
 test:
 	@echo "running tests"
-	go get -t ./...
+	go get -u -t ./...
 	go test -v -cover ./...
 
 itest:
 	@echo "running integration tests"
-	go get -t ./...
+	go get -u -t ./...
 	go test -v -tags=integration ./...
