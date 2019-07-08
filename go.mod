@@ -1,4 +1,4 @@
-module go-common-module
+module go-common-module-module
 
 go 1.12
 
