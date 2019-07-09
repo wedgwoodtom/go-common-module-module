@@ -12,6 +12,5 @@ See the Makefile for options
     * go mod vendor   (pull code to vendor dir)
     * Update a dependency
         * go get -u <repo url>
-        * go mod vendor
-        
-        
+
+* This example is pretty good:  https://www.mycodesmells.com/post/go-modules-example
